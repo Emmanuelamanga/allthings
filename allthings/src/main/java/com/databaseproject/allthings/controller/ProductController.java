@@ -4,9 +4,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.databaseproject.allthings.exception.ResourceNotFoundException;
 
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
+
+@Controller
 @RequestMapping("/api/products")
 public class ProductController {
     private final ProductRepository productRepository;
@@ -17,8 +24,8 @@ public class ProductController {
     }
     
     @GetMapping
-    public ResponseEntity<List<Product>> getAllProducts() {
-        List<Product> products = productRepository.findAll();
+    public ResponseEntity<Iterable<Product>> getAllProducts() {
+        Iterable<Product> products = productRepository.findAll();
         return ResponseEntity.ok(products);
     }
     

@@ -20,6 +20,8 @@ dependencies {
     implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
 
 	implementation("javax.persistence:persistence-api:1.0.2")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	
 }
 
 tasks.withType<Test> {
