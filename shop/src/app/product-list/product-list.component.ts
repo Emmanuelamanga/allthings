@@ -10,7 +10,11 @@ import { products } from "../products";
 export class ProductListComponent {
   products = products;
 
-  share() {
-    window.alert("The product has been shared!");
+  addtoChart() {
+    window.alert("The product has been Added to Cart !");
+  }
+
+  onNotify() {
+    window.alert("You will be notified when the product goes on sale");
   }
 }
