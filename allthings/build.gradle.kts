@@ -16,6 +16,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+
+	implementation("javax.persistence:persistence-api:1.0.2")
 }
 
 tasks.withType<Test> {
