@@ -1,0 +1,2 @@
+run: ./mvnw spring-boot:run
+Clean: ./mvnw clean package
