@@ -1,4 +1,4 @@
-package java.com.databaseproject.allthings;
+package com.databaseproject.allthings;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,7 +20,6 @@ public class ProductController {
     @GetMapping("/great")
     public String great() {
         return "hi";
-    
     }
 
     @GetMapping

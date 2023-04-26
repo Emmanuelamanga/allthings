@@ -1,16 +1,14 @@
-package java.com.databaseproject.allthings;
-
-import javassist.NotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.databaseproject.allthings;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.Optional;
 
-import com.databaseproject.allthings.ProductRepository;
-import com.databaseproject.allthings.Product;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javassist.NotFoundException;
 
 @Service
 public class ProductService {

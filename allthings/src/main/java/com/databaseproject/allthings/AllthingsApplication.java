@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 // @SpringBootApplication(scanBasePackages = { "com.*" })
-@ComponentScan(basePackages = { "com.databaseproject.allthings" })
+@ComponentScan(basePackages = { "com.databaseproject.allthings.ProductService" })
 // @ComponentScan("com.databaseproject.allthings")
 public class AllthingsApplication {
 
