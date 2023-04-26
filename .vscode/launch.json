@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-AllthingsApplication<allthings>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.databaseproject.allthings.AllthingsApplication",
+      "projectName": "allthings",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-package com.databaseproject.allthings;
+package com.databaseproject.allthings.model;
 
 public record Greeting(long id, String content) {
 }

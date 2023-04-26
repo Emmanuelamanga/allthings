@@ -1,4 +1,4 @@
-package com.databaseproject.allthings;
+package com.databaseproject.allthings.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javassist.NotFoundException;
-import com.databaseproject.allthings.Product;
+
+import com.databaseproject.allthings.model.Product;
+import com.databaseproject.allthings.service.ProductService;
 
 @RestController
 @RequestMapping("/products")
@@ -22,7 +24,7 @@ public class ProductController {
         return "hi";
     }
 
-    @GetMapping
+    @GetMapping(value = { "", "/" },produces = "application/json")
     public ResponseEntity<Iterable<Product>> getAllProducts() {
         Iterable<Product> products = productService.getAllProducts();
         return new ResponseEntity<>(products, HttpStatus.OK);
